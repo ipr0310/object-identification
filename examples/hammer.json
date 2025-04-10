@@ -1,0 +1,87 @@
+[
+  {
+    "Aliases": [],
+    "Categories": [
+      {
+        "Name": "Technology and Computing"
+      }
+    ],
+    "Confidence": 97.39942169189453,
+    "Instances": [],
+    "Name": "Electronics",
+    "Parents": []
+  },
+  {
+    "Aliases": [],
+    "Categories": [
+      {
+        "Name": "Technology and Computing"
+      }
+    ],
+    "Confidence": 97.39942169189453,
+    "Instances": [],
+    "Name": "Hardware",
+    "Parents": [
+      {
+        "Name": "Electronics"
+      }
+    ]
+  },
+  {
+    "Aliases": [],
+    "Categories": [
+      {
+        "Name": "Technology and Computing"
+      }
+    ],
+    "Confidence": 96.63531494140625,
+    "Instances": [],
+    "Name": "Device",
+    "Parents": []
+  },
+  {
+    "Aliases": [],
+    "Categories": [
+      {
+        "Name": "Tools and Machinery"
+      }
+    ],
+    "Confidence": 96.23596954345703,
+    "Instances": [
+      {
+        "BoundingBox": {
+          "Height": 0.4767146408557892,
+          "Left": 0.05640418827533722,
+          "Top": 0.2636896073818207,
+          "Width": 0.8938385844230652
+        },
+        "Confidence": 96.23596954345703
+      }
+    ],
+    "Name": "Hammer",
+    "Parents": [
+      {
+        "Name": "Device"
+      },
+      {
+        "Name": "Tool"
+      }
+    ]
+  },
+  {
+    "Aliases": [],
+    "Categories": [
+      {
+        "Name": "Tools and Machinery"
+      }
+    ],
+    "Confidence": 96.23596954345703,
+    "Instances": [],
+    "Name": "Tool",
+    "Parents": [
+      {
+        "Name": "Device"
+      }
+    ]
+  }
+]

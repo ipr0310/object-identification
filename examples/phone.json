@@ -1,0 +1,85 @@
+[
+  {
+    "Aliases": [],
+    "Categories": [
+      {
+        "Name": "Technology and Computing"
+      }
+    ],
+    "Confidence": 99.99903106689453,
+    "Instances": [],
+    "Name": "Electronics",
+    "Parents": []
+  },
+  {
+    "Aliases": [
+      {
+        "Name": "Cell Phone"
+      }
+    ],
+    "Categories": [
+      {
+        "Name": "Technology and Computing"
+      }
+    ],
+    "Confidence": 99.99903106689453,
+    "Instances": [
+      {
+        "BoundingBox": {
+          "Height": 0.7682693600654602,
+          "Left": 0.2693338692188263,
+          "Top": 0.08163846284151077,
+          "Width": 0.5504950881004333
+        },
+        "Confidence": 99.92169189453125
+      }
+    ],
+    "Name": "Mobile Phone",
+    "Parents": [
+      {
+        "Name": "Electronics"
+      },
+      {
+        "Name": "Phone"
+      }
+    ]
+  },
+  {
+    "Aliases": [],
+    "Categories": [
+      {
+        "Name": "Technology and Computing"
+      }
+    ],
+    "Confidence": 99.99903106689453,
+    "Instances": [],
+    "Name": "Phone",
+    "Parents": [
+      {
+        "Name": "Electronics"
+      }
+    ]
+  },
+  {
+    "Aliases": [],
+    "Categories": [
+      {
+        "Name": "Technology and Computing"
+      }
+    ],
+    "Confidence": 99.27690124511719,
+    "Instances": [],
+    "Name": "Iphone",
+    "Parents": [
+      {
+        "Name": "Electronics"
+      },
+      {
+        "Name": "Mobile Phone"
+      },
+      {
+        "Name": "Phone"
+      }
+    ]
+  }
+]
