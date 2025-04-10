@@ -9,6 +9,7 @@
   "dependencies": {
     "@aws-sdk/client-rekognition": "^3.782.0",
     "@aws-sdk/client-translate": "^3.782.0",
+    "@elysiajs/cors": "^1.2.0",
     "@elysiajs/swagger": "^1.2.2",
     "elysia": "latest"
   },

@@ -1,0 +1,97 @@
+[
+  {
+    "Name": "Pencil",
+    "Confidence": 99.99044799804688,
+    "Instances": [],
+    "Parents": [],
+    "Aliases": [],
+    "Categories": [
+      {
+        "Name": "Everyday Objects"
+      }
+    ]
+  },
+  {
+    "Name": "Blade",
+    "Confidence": 90.3375244140625,
+    "Instances": [],
+    "Parents": [
+      {
+        "Name": "Weapon"
+      }
+    ],
+    "Aliases": [],
+    "Categories": [
+      {
+        "Name": "Weapons and Military"
+      }
+    ]
+  },
+  {
+    "Name": "Dagger",
+    "Confidence": 90.3375244140625,
+    "Instances": [
+      {
+        "BoundingBox": {
+          "Width": 0.9250494241714478,
+          "Height": 0.9419087171554565,
+          "Left": 0.03840896487236023,
+          "Top": 0.0317293182015419
+        },
+        "Confidence": 90.3375244140625
+      }
+    ],
+    "Parents": [
+      {
+        "Name": "Blade"
+      },
+      {
+        "Name": "Knife"
+      },
+      {
+        "Name": "Weapon"
+      }
+    ],
+    "Aliases": [],
+    "Categories": [
+      {
+        "Name": "Weapons and Military"
+      }
+    ]
+  },
+  {
+    "Name": "Knife",
+    "Confidence": 90.3375244140625,
+    "Instances": [],
+    "Parents": [
+      {
+        "Name": "Blade"
+      },
+      {
+        "Name": "Weapon"
+      }
+    ],
+    "Aliases": [],
+    "Categories": [
+      {
+        "Name": "Weapons and Military"
+      }
+    ]
+  },
+  {
+    "Name": "Weapon",
+    "Confidence": 90.3375244140625,
+    "Instances": [],
+    "Parents": [],
+    "Aliases": [
+      {
+        "Name": "Weaponry"
+      }
+    ],
+    "Categories": [
+      {
+        "Name": "Weapons and Military"
+      }
+    ]
+  }
+]

@@ -11,7 +11,28 @@ export const classifyLabels = (
   | undefined => {
   if (!labels.length) return undefined;
 
-  // 1st Check for instances
+  // Filter for labels with a minimum of 99%
+  const highPercentageItem = labels.find(
+    (label) => !!(label?.Confidence && label.Confidence >= 99)
+  );
+
+  if (highPercentageItem) {
+    const category = !!(
+      highPercentageItem?.Categories && !!highPercentageItem.Categories.length
+    )
+      ? `${highPercentageItem.Categories[0].Name}`
+      : "";
+
+    return {
+      name: highPercentageItem.Name || "",
+      category,
+      confidence: highPercentageItem?.Confidence
+        ? Math.floor(highPercentageItem.Confidence)
+        : 0,
+    };
+  }
+
+  // 2nd Check for instances
   const instance = labels.find(
     (label) => !!(label.Instances && !!label.Instances?.length)
   );

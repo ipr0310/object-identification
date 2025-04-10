@@ -1,5 +1,6 @@
 import { Elysia, t } from "elysia";
 import { swagger } from "@elysiajs/swagger";
+import { cors } from "@elysiajs/cors";
 
 import {
   RekognitionClient,
@@ -41,6 +42,7 @@ const translateText = async (text: string) => {
 };
 
 const app = new Elysia()
+  .use(cors())
   .use(swagger())
   .get("/", () => "Hello World")
   .post(
@@ -62,7 +64,7 @@ const app = new Elysia()
         },
         // Optional settings:
         MaxLabels: 5, // Limit the number of labels returned.
-        MinConfidence: 90, // Only return labels with at least 90% confidence.
+        MinConfidence: 50, // Only return labels with at least 50% confidence.
       };
 
       // Create and send the command to AWS Rekognition.
@@ -80,7 +82,12 @@ const app = new Elysia()
         const category = await translateText(labels.category);
         const confidence = labels.confidence;
 
-        return { name, category, confidence };
+        return {
+          name,
+          category,
+          confidence,
+          english: { name: labels.name, category: labels.category },
+        };
       } catch (error) {
         console.error("Error detecting labels:", error);
         return { error: "Failed to detect labels" };
